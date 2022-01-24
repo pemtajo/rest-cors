@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  obsidian:
+    build: .
+    container_name: obsidian-rest-api
+    image: obsidian-rest-api
+    volumes:
+      - ./proxy.py:/proxy.py
+    ports:
+      - 5472:5472

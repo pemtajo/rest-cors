@@ -23,6 +23,12 @@ def remove_chars(str):
     str = str.replace('|', '-')
     str = str.replace('#', '')
     str = str.replace('^', '')
+
+    str = str.replace('*', '')
+    str = str.replace('"', '')
+    str = str.replace('<', '')
+    str = str.replace('>', '')
+    str = str.replace('?', '')
     return str
 
 @app.route("/jira", methods=["GET"])

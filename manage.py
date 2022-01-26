@@ -29,7 +29,9 @@ def remove_chars(str):
     str = str.replace('<', '')
     str = str.replace('>', '')
     str = str.replace('?', '')
-    return str
+
+
+    return str.strip()
 
 @app.route("/jira", methods=["GET"])
 def jira():
